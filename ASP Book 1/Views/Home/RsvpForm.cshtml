@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ASP_Book_1.Models.GuestResponese
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+    <link rel="stylesheet" href="/css/Styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body>
+    @*<div>
+        This is the RsvpForm.cshtml View
+       
+    </div>*@
+    <div class="panel panel-success">
+        <div class="panel-heading text-center">RSVP</div>
+        <div class="panel-body">
+            <form class="p-a-1" asp-action="RsvpForm" method="post">
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label asp-for="Name">Your name:</label>
+                    <input asp-for="Name" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email"> Your email: </label>
+                    <input asp-for="Email" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone"> Your phone: </label> 
+                    <input asp-for="Phone" />
+                </div>
+                <div class="form-group">
+                    <label>Will you attend?</label>
+                    <select asp-for="WillAttend">
+                        <option value="">Choose an option</option>
+                        <option value="true">Yes, I'll be there</option>
+                        <option value="false">No, I can't come</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="submit">Summit RSVP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

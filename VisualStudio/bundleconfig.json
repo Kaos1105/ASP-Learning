@@ -1,0 +1,28 @@
+[
+  {
+    "outputFileName": "wwwroot/js/fourth.min.js",
+    "inputFiles": [
+      "wwwroot/js/fourth.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/third.min.js",
+    "inputFiles": [
+      "wwwroot/js/third.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bundle.js",
+    "inputFiles": [
+      "wwwroot/js/fourth.js",
+      "wwwroot/js/third.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bundle.css",
+    "inputFiles": [
+      "wwwroot/css/first.css",
+      "wwwroot/css/second.css"
+    ]
+  }
+]
